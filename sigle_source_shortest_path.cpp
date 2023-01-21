@@ -4,7 +4,7 @@ using namespace std;
 
 /* 
 
-Only for unweighted graphs.
+Only for unweighted graphs. Do BFS and count level
 
 M---D---K---A
 |   |   |

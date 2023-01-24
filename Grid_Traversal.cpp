@@ -98,16 +98,16 @@ int main()
         }
     }
     // initializing the level as -1
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
-            lvl[i][j]=-1;
-        }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < n; j++)
+    //     {
+    //         lvl[i][j]=-1;
+    //     }
         
-    }
+    // }
+    memset(lvl, -1, sizeof(lvl));
     
-
     // for(int i=0;i<n;i++){
     //     for(int j=0;j<m;j++){
     //     cout<<maze[i][j]<<"\t";

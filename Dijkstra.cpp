@@ -10,7 +10,7 @@ vector<pair<int,int>> g[N];
 int vis[N],parent[N];
 
 void dijkstra(int src){
-    vector<long long> d(N,INF);
+    vector<long long> d(N,INF);//(size,value)
     priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>> > pq;
     d[src]= 0;
     pq.push({0,src});// {distance,node}

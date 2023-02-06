@@ -21,10 +21,11 @@ void dijkstra(int src){
         pq.pop();
         int selected_node = head.second;
         if (!vis[selected_node]){
-            vis[selected_node]=1;
+            vis[selected_node]=1;// if u is not visited then make it visited
             for (auto i: g[selected_node])
             {
-                int node=i.first,cost=i.second;
+                int node=i.first;
+                int cost=i.second;
                 if(d[selected_node]+cost<d[node]){
                     d[node]=d[selected_node]+cost;
                     parent[node]=selected_node;
